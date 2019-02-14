@@ -16,7 +16,7 @@ body{
   width: 80%;
   margin-top: 0;
   margin-right: auto;
-  margin-bottom: 0
+  margin-bottom: 0;
   margin-left: auto;
   margin: 0 auto 0 auto;
   margin: 0 auto;
@@ -28,7 +28,7 @@ body{
 }
 
 #nav li {
-  margin: 0
+  margin: 0;
   padding: 0;
   border-bottom: 1px solid #ccc;
 }
@@ -46,4 +46,24 @@ body{
 
 #nav a:hover, #nav a:active {
   background-color: #7a991a;
+}
+
+.caption {
+  font-family: Georgia, "Times New Roman", serif;
+  font-style: italic;
+  color: black;
+  font-size: 0.8em;
+  margin-top: 0;
+  text-align: right;
+}
+#FOOTER {
+  color: black;
+  font-family: Georgia, "Times New Roman", serif;
+  font: 0.8em;
+  border-top: 1px solid black
+}
+
+
+img {
+  border: none;
 }
