@@ -1,31 +1,35 @@
 body {
   text-align: center;
-  background-color: rgb(33, 193, 1);
-
+  background-color: rgb(145, 145, 145);
+  list-style-type: none;
 }
+
 #container {
-  background-color: rgb(12, 2, 254);
   font-family: "Crimson Text", Georgia, serif;
   font-size: 20pt;
 }
 
 #joke {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(145, 145, 145);
+  list-style-type: none;
 }
+
 #joke a:link, #joke a:visited {
   display: block;
   font-weight: bold;
-  padding: 8px;
+  padding: 4px;
   font-family: "Roboto", "Lato", sans-serif;
   width: auto;
   text-align: center;
+  background-color: rgb(145, 145, 145)
 }
+
 #joke a:hover, #joke a:active {
-    background-color: rgb(163, 245, 255);
+    background-color: rgb(57, 141, 237);
 }
 
 #image {
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(145, 145, 145);
 }
 
 img {
@@ -48,12 +52,13 @@ img {
 #nav a:link, #nav a:visited {
   display: block;
   font-weight: bold;
-  padding: 8px;
+  padding: 4px;
   font-family: "Roboto", "Lato", sans-serif;
   width: auto;
   text-align: center;
+  background-color: rgb(145, 145, 145)
 }
 
 #nav a:hover, #nav a:active {
-  background-color: rgb(163, 245, 255);
+  background-color: rgb(57, 141, 237);
 }
