@@ -1,0 +1,72 @@
+body {
+  text-align: center;
+  background-color: rgb(145, 145, 145);
+  list-style-type: none;
+}
+
+#container {
+  font-family: "Crimson Text", Georgia, serif;
+  font-size: 14pt;
+}
+
+#hi {
+  font-family: "Crimson Text", Georgia, serif;
+  font-weight: bolder;
+  font-size: 30pt;
+  list-style-type: none;
+}
+
+#joke {
+  background-color: rgb(145, 145, 145);
+  list-style-type: none;
+}
+
+#joke a:link, #joke a:visited {
+  display: block;
+  font-weight: bold;
+  padding: 4px;
+  font-family: "Roboto", "Lato", sans-serif;
+  width: auto;
+  text-align: center;
+  background-color: rgb(145, 145, 145)
+}
+
+#joke a:hover, #joke a:active {
+    background-color: rgb(57, 141, 237);
+}
+
+#image {
+  background-color: rgb(145, 145, 145);
+}
+
+img {
+  border: none;
+}
+
+#footer {
+  background-color: rgb(255, 255, 255);
+  font-family: "Crimson Text", "Times New Roman", serif;
+  font-size: 10pt;
+  text-align: right;
+}
+
+#nav {
+  font-size: 14pt;
+  list-style-type: none;
+  padding: none;
+}
+
+#nav a:link, #nav a:visited {
+  display: block;
+  font-weight: bold;
+  padding: 4px;
+  font-family: "Roboto", "Lato", sans-serif;
+  width: auto;
+  text-align: center;
+  background-color: rgb(145, 145, 145)
+  padding: none;
+}
+
+#nav a:hover, #nav a:active {
+  background-color: rgb(57, 141, 237);
+}
