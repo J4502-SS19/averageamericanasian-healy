@@ -70,3 +70,12 @@ img {
 #nav a:hover, #nav a:active {
   background-color: rgb(57, 141, 237);
 }
+
+.items {
+  display: flex;
+  flex-wrap: wrap-reverse;
+}
+
+.item-1 {
+  order: -1;
+}
