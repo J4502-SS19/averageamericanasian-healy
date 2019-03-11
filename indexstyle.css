@@ -74,3 +74,15 @@ img {
 #nav a:hover, #nav a:active {
   background-color: rgb(57, 141, 237);
 }
+
+#nav {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 800px) {
+  #nav {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
