@@ -13,6 +13,11 @@
   }
 }
 
+@items {
+  flex-direction: row
+
+}
+
 @media (min-width: 1000px) {
 
   .item-1 {
@@ -27,6 +32,6 @@ body{
 }
 
 #items {
-  font-size: 1em;
-  
+  font-size: 12pt;
+
 }
