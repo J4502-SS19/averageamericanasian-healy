@@ -53,7 +53,7 @@ img {
 #nav {
   font-size: 14pt;
   list-style-type: none;
-  padding: none;
+  padding: 0px;
 }
 
 #nav a:link, #nav a:visited {
@@ -63,8 +63,8 @@ img {
   font-family: "Roboto", "Lato", sans-serif;
   width: auto;
   text-align: center;
-  background-color: rgb(145, 145, 145)
-  padding: none;
+  background-color: rgb(145, 145, 145);
+  padding: 0px;
 }
 
 #nav a:hover, #nav a:active {
@@ -73,9 +73,12 @@ img {
 
 .items {
   display: flex;
-  flex-wrap: wrap-reverse;
+  flex-direction: column;
 }
 
-.item-1 {
-  order: -1;
+@media (min-width: 800px){
+  .items {
+    flex-direction: row;
+    justify-content: center;
+  }
 }
