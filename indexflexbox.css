@@ -25,3 +25,8 @@ body{
   font-family: "Roboto", "Lato", sans-serif;
   background-color: rgb(145, 145, 145);
 }
+
+#items {
+  font-size: 1em;
+  
+}
