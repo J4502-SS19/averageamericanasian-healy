@@ -52,3 +52,10 @@ h1 {
   background-color: #7a991a;
   text-decoration: underline;
 }
+
+.box {
+  position: fixed;
+  width: 200px;
+  background-color: #ccc;
+  top: 20px;
+}
