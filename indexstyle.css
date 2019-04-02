@@ -5,12 +5,16 @@
 body {
   text-align: center;
   background-color: rgb(145, 145, 145);
+}
+
+#items {
   list-style-type: none;
 }
 
 #container {
   font-family: "Crimson Text", Georgia, serif;
   font-size: 14pt;
+  width: 80%;
 }
 
 #hi {
@@ -39,8 +43,9 @@ body {
     background-color: rgb(57, 141, 237);
 }
 
-#image {
+#images {
   background-color: rgb(145, 145, 145);
+  width: auto;
 }
 
 img {
@@ -85,4 +90,35 @@ img {
     flex-direction: row;
     justify-content: space-around;
   }
+}
+
+@media screen and (min-width: 375px) {
+  .image1{
+    margin-right: auto;
+
+  }
+}
+
+.images {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+  grid-template-areas:
+    "a b c d"
+}
+
+.image1 {
+  grid-area: a;
+}
+
+.image2 {
+  grid-area: b;
+}
+
+.image3 {
+  grid-area: c;
+}
+
+.image4 {
+  grid-area: d;
 }
