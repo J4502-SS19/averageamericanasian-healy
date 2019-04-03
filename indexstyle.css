@@ -1,14 +1,15 @@
 * {
-  box-sizing: border-box;
+box-sizing: border-box;
 }
 
 body {
-  text-align: center;
   background-color: rgb(145, 145, 145);
 }
 
 #items {
   list-style-type: none;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 #container {
@@ -17,11 +18,17 @@ body {
   width: 80%;
 }
 
+div ul {
+  display: flex;
+  justify-content: space-between;
+}
+
 #hi {
   font-family: "Crimson Text", Georgia, serif;
   font-weight: bolder;
   font-size: 30pt;
   list-style-type: none;
+  text-align: center;
 }
 
 #joke {
@@ -46,10 +53,13 @@ body {
 #images {
   background-color: rgb(145, 145, 145);
   width: auto;
+  display: flex;
+  justify-content: space-between;
 }
 
 img {
   border: none;
+  align-items: center;
 }
 
 #footer {
@@ -92,33 +102,49 @@ img {
   }
 }
 
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 300px) {
   .image1{
-    margin-right: auto;
-
+    margin-right: 10px;
   }
 }
 
-.images {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 20px;
-  grid-template-areas:
-    "a b c d"
+section {
+  margin-bottom: 0.5em;
 }
 
-.image1 {
+#quotes {
+  width: 80%;
+}
+
+.lorde {
+  width: 25%;
+  max-width: 200px;
+  float: left;
+  text-align: left;
+}
+
+@media screen and (min-width:1000px) {
+  article {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-gap: 20px;
+    grid-template-areas:
+      "a b c d"
+  }
+}
+
+.title {
   grid-area: a;
 }
 
-.image2 {
+.louvre {
   grid-area: b;
 }
 
-.image3 {
+.borns {
   grid-area: c;
 }
 
-.image4 {
+.americanmoney {
   grid-area: d;
 }
