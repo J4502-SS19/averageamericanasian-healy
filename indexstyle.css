@@ -34,6 +34,7 @@ div ul {
 #joke {
   background-color: rgb(145, 145, 145);
   list-style-type: none;
+  align-items: center;
 }
 
 #joke a:link, #joke a:visited {
@@ -95,7 +96,7 @@ img {
   flex-direction: column;
 }
 
-@media (min-width: 800px) {
+@media screen and (min-width: 800px) {
   #nav {
     flex-direction: row;
     justify-content: space-around;
@@ -119,6 +120,7 @@ section {
 .cards {
   margin: 0 -10px;
   padding: 20px;
+  padding-bottom: 20px;
   list-style-type: none;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -128,13 +130,11 @@ section {
     "a b c"
     "a d e"
     "f f e";
-  align-items: start;
-  justify-items: start;
+  max-width: 80%;
 }
 
 .cards li {
   background-color: rgb(57, 141, 237);
-  border: 1px solid #ccc;
   padding: 10px;
   border-radius: 5px;
 }
@@ -145,18 +145,14 @@ section {
 
 .card2 {
   grid-area: b;
-  align-self: stretch;
 }
 
 .card3 {
   grid-area: c;
-  align-self: flex-end;
 }
 
 .card4 {
   grid-area: d;
-  align-self: center;
-  justify-self: center;
 }
 
 .card5 {
@@ -165,4 +161,21 @@ section {
 
 .card6 {
   grid-area: f;
+}
+
+@media screen and (min-width: 450px) {
+
+  nav ul {
+    flex-flow: row;
+    justify-content: center;
+  }
+
+}
+
+@@media screen and (min-width: 600px) {
+
+  #container2 {
+    width: 80%;
+  }
+
 }
