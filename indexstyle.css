@@ -129,6 +129,7 @@ section {
     "a d e"
     "f f e";
   align-items: start;
+  justify-items: start;
 }
 
 .cards li {
@@ -155,6 +156,7 @@ section {
 .card4 {
   grid-area: d;
   align-self: center;
+  justify-self: center;
 }
 
 .card5 {
