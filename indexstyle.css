@@ -1,14 +1,15 @@
 * {
-  box-sizing: border-box;
+box-sizing: border-box;
 }
 
 body {
-  text-align: center;
   background-color: rgb(145, 145, 145);
 }
 
 #items {
   list-style-type: none;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 #container {
@@ -17,16 +18,23 @@ body {
   width: 80%;
 }
 
+div ul {
+  display: flex;
+  justify-content: space-between;
+}
+
 #hi {
   font-family: "Crimson Text", Georgia, serif;
   font-weight: bolder;
   font-size: 30pt;
   list-style-type: none;
+  text-align: center;
 }
 
 #joke {
   background-color: rgb(145, 145, 145);
   list-style-type: none;
+  align-items: center;
 }
 
 #joke a:link, #joke a:visited {
@@ -46,10 +54,13 @@ body {
 #images {
   background-color: rgb(145, 145, 145);
   width: auto;
+  display: flex;
+  justify-content: space-between;
 }
 
 img {
   border: none;
+  align-items: center;
 }
 
 #footer {
@@ -85,40 +96,86 @@ img {
   flex-direction: column;
 }
 
-@media (min-width: 800px) {
+@media screen and (min-width: 800px) {
   #nav {
     flex-direction: row;
     justify-content: space-around;
   }
 }
 
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 300px) {
   .image1{
-    margin-right: auto;
-
+    margin-right: 10px;
   }
 }
 
-.images {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 20px;
-  grid-template-areas:
-    "a b c d"
+section {
+  margin-bottom: 0.5em;
 }
 
-.image1 {
+#quotes {
+  width: 80%;
+}
+
+.cards {
+  margin: 0 -10px;
+  padding: 20px;
+  padding-bottom: 20px;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  gap: 20px;
+  grid-template-areas:
+    "a b c"
+    "a d e"
+    "f f e";
+  max-width: 80%;
+}
+
+.cards li {
+  background-color: rgb(57, 141, 237);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.card1{
   grid-area: a;
 }
 
-.image2 {
+.card2 {
   grid-area: b;
 }
 
-.image3 {
+.card3 {
   grid-area: c;
 }
 
-.image4 {
+.card4 {
   grid-area: d;
+}
+
+.card5 {
+  grid-area: e;
+}
+
+.card6 {
+  grid-area: f;
+}
+
+@media screen and (min-width: 450px) {
+
+  nav ul {
+    flex-flow: row;
+    justify-content: center;
+  }
+
+}
+
+@@media screen and (min-width: 600px) {
+
+  #container2 {
+    width: 80%;
+  }
+
 }
