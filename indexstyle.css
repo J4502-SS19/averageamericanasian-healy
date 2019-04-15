@@ -10,6 +10,7 @@ body {
   list-style-type: none;
   justify-content: space-between;
   flex-wrap: wrap;
+  padding: none;
 }
 
 #container {
@@ -70,13 +71,13 @@ img {
   text-align: right;
 }
 
-#nav {
+nav {
   font-size: 14pt;
   list-style-type: none;
   padding: 0px;
 }
 
-#nav a:link, #nav a:visited {
+nav a:link, #nav a:visited {
   display: block;
   font-weight: bold;
   padding: 4px;
@@ -87,17 +88,17 @@ img {
   padding: 0px;
 }
 
-#nav a:hover, #nav a:active {
+nav a:hover, #nav a:active {
   background-color: rgb(57, 141, 237);
 }
 
-#nav {
+nav {
   display: flex;
   flex-direction: column;
 }
 
 @media screen and (min-width: 800px) {
-  #nav {
+  nav {
     flex-direction: row;
     justify-content: space-around;
   }
@@ -172,10 +173,8 @@ section {
 
 }
 
-@@media screen and (min-width: 600px) {
-
+@media screen and (min-width: 600px) {
   #container2 {
     width: 80%;
   }
-
 }
