@@ -1,0 +1,78 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1504\cocoasubrtf810
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww10980\viewh9240\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs36 \cf0 Cards example \
+\
+Take a look at markup, see that there are original and finished versions of this, like usual. \
+\
+We have an overall div with a class of \'93card-container\'94, then each of the cards themselves is a div with a class of \'93card.\'94 \
+\
+We have set this up like so: inside each div with class of \'93card\'94 is a picture, the picture is being pulled in from an outside site, we can set widths on the images themselves as they expand. \
+\
+Right now we\'92ve set widths on the images to 100 percent, which of course is expressed as a percentage of its containing element, in this case the container div. Nice and responsive but you see the issue when the page gets big. \
+\
+What if instead of this, we had a setup where the cards would stay a similar size to one another at our breakpoints? Well, to do that we can use some techniques we\'92ve learned in class to make them flexible elements and size to a certain extent. \
+\
+If you look in the finished example, you can see that our card styles are going to be written right before the media queries, under this: \
+\
+/*==================================\
+Cards example specific styles\
+==================================*/\
+\
+Let\'92s first go through and style the cards just a bit, to make it clear that they\'92re cards: \
+\
+.card \{\
+    border: 1px solid gray;\
+    box-shadow: 1px 1px 3px #888;\
+    border-top: 10px solid #bd5532;\
+    padding: 0;\
+    margin: 10px;\
+\}\
+\
+Because each div has a class of \'93card\'94 set on it, this will apply to each div that\'92s a card. \
+\
+and let\'92s add a little padding to the inside of the text, to make sure it doesn\'92t run up into the edge of the image: \
+\
+.card p \{\
+    padding: 10px;\
+\}\
+\
+So the first thing we\'92ll do is make our cards flexible items. Down below the cards display styles note: \
+\
+.cards \{\
+    display: flex; \
+\}\
+\
+That will make them flexible, but it puts them all one line horizontally (remember, default is no-wrap). Let\'92s just style them in a column at the default view, by putting flex and column display on our card-container class: \
+\
+.card-container \{\
+    display: flex;\
+    flex-flow: column;\
+\}\
+\
+Looking at our code, we see that a breakpoint is at 600 px, which gives us about 300 px to play with for each card item. Let\'92s say that at that breakpoint we want to make each flex item 250 px wide, change them to a row and allow them to wrap. We will do that inside of our 600px media query, by first putting them into a row and applying the row-wrap command: \
+\
+.card-container \{\
+        flex-flow: row;\
+        flex-wrap: wrap;\
+        justify-content: space-between;\
+    \}\
+\
+then by styling each card so that we can fit two next to each other: \
+\
+    .card \{\
+        width: 45%;\
+    \}\
+\
+\
+And then when we get to 800 px, we have enough room to display three cards side by side. Because we\'92ve already set up the row and wrap commands in the 600px media query, we don\'92t need to do that again. We\'92ll just style each card by its width:  \
+\
+    .card \{\
+        width: 30%;\
+    \}\
+\
+You can obviously play with these widths a bit, but the key thing is that they would be less than 100 percent when all the widths add up. You could go four or five across if you had a larger size for them to work in, and also somewhat smaller text. }
