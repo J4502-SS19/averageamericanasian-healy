@@ -119,6 +119,26 @@ Full screen background example specific styles
 
 @media screen and (min-width: 800px) {
 
+  /* .cover {
+    margin-top: -65px;
+    position: relative;
+    z-index: -1;
+  }
+
+  h1 {
+    padding-left: 10px;
+    padding-top: 10px;
+  } */
+
+  header {
+    background-image: url('imag/wp.png');
+    background-size: 100% auto;
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+    padding: 2em;
+  }
+
     #container {
         width: 70%;
         max-width: 60em;
@@ -136,4 +156,33 @@ Full screen background example specific styles
     nav ul li {
         margin-left: 1.8em;
     }
+}
+
+header {
+  height: 100vh;
+  margin: 0;
+  padding: 2em;
+}
+
+header::after {
+  background-image: url('imag/wp.png');
+  background-size: 100% auto;
+  background-size: cover;
+  position: absolute;
+  z-index: -1;
+}
+
+article {
+  height: 100vh;
+  display: flex;
+}
+
+article p {
+  width: 400px;
+  height: 500px;
+  margin: auto;
+}
+
+.article-2, .article-4 {
+  background-color: yellow;
 }
