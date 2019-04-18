@@ -165,9 +165,13 @@ header {
 }
 
 header::after {
-  background-image: url('imag/wp.png');
+  background-image: url('img/wp.png');
   background-size: 100% auto;
   background-size: cover;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
   position: absolute;
   z-index: -1;
 }
